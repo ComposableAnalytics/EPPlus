@@ -1,4 +1,8 @@
-# EPPlus 4.5.3.3
+# EPPlus 4.5.3.4
+
+This is a Composable-maintained fork of EPPlus, hosted at
+https://github.com/ComposableAnalytics/EPPlus
+It was created to address a bug in release 4.5.3
 
 ## Announcement: This is the last version of EPPlus under the LGPL License
 EPPlus will from version 5 be licensed under the [Polyform Noncommercial 1.0.0]( https://polyformproject.org/licenses/noncommercial/1.0.0/) license.  
@@ -31,6 +35,9 @@ apt-get install libgdiplus
 EPPlus-A .NET Spreadsheet API
 
 Changes
+4.5.3.4
+* Removed incorrect length-based name validation for defined names that begin with backslash.
+
 4.5.3.3
 * Support for .NET Standard 2.1.
 
@@ -187,7 +194,7 @@ Minor new features
 
 Beta 2 Changes
 * Fixed bug when using RepeatColumns & RepeatRows at the same time.
-* VBA project will be left untouched if it’s not accessed.
+* VBA project will be left untouched if itâ€™s not accessed.
 * Fixed problem with strings on save.
 * Added locks to the cell store for access by multiple threads.
 * Implemented Indirect function
