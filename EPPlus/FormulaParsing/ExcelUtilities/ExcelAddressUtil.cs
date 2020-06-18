@@ -76,7 +76,7 @@ namespace OfficeOpenXml.FormulaParsing.ExcelUtilities
                 return false;
             }
             var fc = name[0];
-            if (!(char.IsLetter(fc) || fc == '_' || (fc == '\\' && name.Length > 2)))
+            if (!(char.IsLetter(fc) || fc == '_' || fc == '\\'))
             {
                 return false;
             }
@@ -102,7 +102,7 @@ namespace OfficeOpenXml.FormulaParsing.ExcelUtilities
             }
 
             var fc = name[0];
-            if (!(char.IsLetter(fc) || fc == '_' || (fc == '\\' && name.Length > 2)))
+            if (!(char.IsLetter(fc) || fc == '_' || fc == '\\'))
             {
                 name = "_" + name.Substring(1);
             }
